@@ -1,0 +1,24 @@
+openapi: 3.1.0
+info:
+  title: Tim Daily Newsletter API
+  description: 틈에 담긴 하루 뉴스레터를 불러오는 API
+  version: 1.0.0
+  contact:
+    name: Seohyoung Lee
+    email: shlee710310@gmail.com
+servers:
+  - url: http://localhost:8000
+    description: Local server
+paths:
+  /newsletter/today:
+    get:
+      operationId: getTodayNewsletter
+      summary: 오늘의 뉴스레터 가져오기
+      responses:
+        '200':
+          description: 오늘의 뉴스레터 텍스트
+          content:
+            text/plain:
+              schema:
+                type: string
+
