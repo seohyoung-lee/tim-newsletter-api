@@ -7,8 +7,8 @@ info:
     name: Seohyoung Lee
     email: shlee710310@gmail.com
 servers:
-  - url: http://localhost:8000
-    description: Local server
+  - url: http://raw.githubusercontent.com/seohyoung-lee/tim-newsletter-api/main
+    description: GitHub Raw server
 paths:
   /newsletter/today:
     get:
